@@ -1,0 +1,2181 @@
+<!--  --><!DOCTYPE html>
+<html lang="bn" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মানব শারীরতত্ত্ব: চলন ও অঙ্গ চালনা - কুইজ</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Hind Siliguri -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Canvas Confetti CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Hind Siliguri"', 'sans-serif'],
+                    },
+                    colors: {
+                        royal: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                            950: '#172554',
+                        }
+                    },
+                    animation: {
+                        'float': 'float 3.5s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'shake': 'shake 0.4s ease-in-out',
+                        'pop': 'pop 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+                        'celebrate': 'celebrate 0.5s ease-out'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-12px)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+                            '50%': { opacity: '0.85', transform: 'scale(1.05)' }
+                        },
+                        shake: {
+                            '0%, 100%': { transform: 'translateX(0)' },
+                            '20%, 60%': { transform: 'translateX(-8px)' },
+                            '40%, 80%': { transform: 'translateX(8px)' }
+                        },
+                        pop: {
+                            '0%': { transform: 'scale(0.95)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        },
+                        celebrate: {
+                            '0%': { transform: 'scale(0.8)', opacity: '0' },
+                            '50%': { transform: 'scale(1.08)' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Glassmorphism styling */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(219, 234, 254, 0.8);
+        }
+        .dark .glass-card {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(30, 58, 138, 0.4);
+        }
+
+        /* Glowing Material Blue Button */
+        .glow-btn-royal {
+            box-shadow: 0 0 18px rgba(37, 99, 235, 0.45);
+            transition: all 0.3s ease;
+        }
+        .glow-btn-royal:hover {
+            box-shadow: 0 0 28px rgba(37, 99, 235, 0.75);
+        }
+
+        .gradient-bg {
+            background: radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.18) 0%, transparent 45%),
+                        radial-gradient(circle at 85% 85%, rgba(29, 78, 216, 0.15) 0%, transparent 45%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen gradient-bg pb-12">
+
+    <header class="sticky top-0 z-50 glass-card border-b border-royal-200/50 dark:border-royal-900/50 mb-8 px-4 py-3">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="p-2.5 bg-royal-600 text-white rounded-xl shadow-lg shadow-royal-600/30">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C20.832 18.477 19.247 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                </span>
+                <div>
+                    <span class="font-bold text-lg hidden sm:inline tracking-wide bg-gradient-to-r from-royal-600 via-royal-500 to-indigo-600 dark:from-royal-400 dark:to-indigo-300 bg-clip-text text-transparent">বায়োলজি কুইজ হাব</span>
+                    <span class="text-xs block text-slate-500 dark:text-slate-400 font-medium">এইচএসসি জীববিজ্ঞান দ্বিতীয় পত্র</span>
+                </div>
+            </div>
+
+            <!-- Header Controls -->
+            <div class="flex items-center gap-3">
+                <!-- Sound Button -->
+                <button id="soundToggleBtn" onclick="toggleSound()" title="সাউন্ড অন/অফ" class="p-2.5 rounded-xl glass-card hover:bg-royal-100 dark:hover:bg-slate-800 transition-all text-slate-600 dark:text-slate-300">
+                    <svg id="soundIconOn" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
+                    </svg>
+                    <svg id="soundIconOff" class="w-5 h-5 hidden text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15zM17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path>
+                    </svg>
+                </button>
+
+                <!-- Dark Mode Toggle -->
+                <button onclick="toggleDarkMode()" title="ডার্ক/লাইট মোড" class="p-2.5 rounded-xl glass-card hover:bg-royal-100 dark:hover:bg-slate-800 transition-all text-amber-500 dark:text-royal-300">
+                    <svg id="sunIcon" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                    <svg id="moonIcon" class="w-5 h-5 block dark:hidden text-royal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                </button>
+
+                <!-- Reset Button -->
+                <button onclick="resetQuiz()" class="px-4 py-2 rounded-xl bg-royal-600 hover:bg-royal-700 text-white font-medium text-sm transition-all shadow-md shadow-royal-600/30 active:scale-95">
+                    রিসেট
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4">
+
+        <section class="glass-card rounded-3xl p-6 md:p-8 mb-8 shadow-xl relative overflow-hidden border border-royal-500/20">
+            <!-- Glow Accents -->
+            <div class="absolute -right-16 -top-16 w-56 h-56 bg-royal-500/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -left-16 -bottom-16 w-56 h-56 bg-blue-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+                <div class="space-y-3 text-center md:text-left flex-1">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-royal-500/10 text-royal-700 dark:text-royal-300 font-bold text-xs border border-royal-500/20">
+                        <span class="w-2 h-2 rounded-full bg-royal-600 animate-ping"></span>
+                        উচ্চমাধ্যমিক এইচএসসি বায়োলজি
+                    </div>
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                        সপ্তম অধ্যায়: মানব শারীরতত্ত্ব: চলন ও অঙ্গ চালনা
+                    </h1>
+                    <p class="text-royal-600 dark:text-royal-300 font-semibold text-lg flex items-center justify-center md:justify-start gap-2">
+                        <svg class="w-5 h-5 text-royal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                        টপিক: মানব কঙ্কালতন্ত্র
+                    </p>
+                </div>
+
+                <!-- Animated Skeleton Graphic -->
+                <div class="relative flex items-center justify-center shrink-0">
+                    <div class="w-28 h-28 md:w-36 md:h-36 rounded-2xl bg-gradient-to-tr from-royal-600/20 to-indigo-500/20 flex items-center justify-center p-3 border border-royal-400/30 shadow-inner">
+                        <svg class="w-20 h-20 md:w-24 md:h-24 text-royal-600 dark:text-royal-400 animate-float" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2C8.686 2 6 4.686 6 8c0 2.22 1.206 4.16 3 5.19V15c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1.81c1.794-1.03 3-2.97 3-5.19 0-3.314-2.686-6-6-6z" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="9.5" cy="7.5" r="1.25" fill="currentColor"/>
+                            <circle cx="14.5" cy="7.5" r="1.25" fill="currentColor"/>
+                            <path d="M10 11.5h4" stroke-linecap="round"/>
+                            <path d="M10 14h4" stroke-linecap="round"/>
+                            <path d="M12 16v6" stroke-linecap="round" stroke-dasharray="1 1.5"/>
+                            <path d="M9 18h6M8.5 20.5h7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Score & Progress Bar -->
+            <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-6 text-sm font-semibold w-full sm:w-auto justify-around">
+                    <div>
+                        <span class="text-slate-500 dark:text-slate-400">মোট প্রশ্ন:</span>
+                        <span id="totalQuestionsCount" class="text-slate-900 dark:text-white font-bold ml-1">0</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-500 dark:text-slate-400">স্কোর:</span>
+                        <span id="scoreCounter" class="text-emerald-500 font-bold ml-1">0</span>
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-64 bg-slate-200 dark:bg-slate-800 rounded-full h-3 overflow-hidden p-0.5">
+                    <div id="progressBar" class="bg-gradient-to-r from-royal-600 to-indigo-500 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quizContainer" class="space-y-6">
+            <!-- Quiz items render here dynamically -->
+        </section>
+
+        <!-- Completion Modal -->
+        <div id="completionCard" class="hidden glass-card rounded-3xl p-8 text-center mt-8 border border-emerald-500/40 animate-pop shadow-2xl">
+            <div class="w-16 h-16 bg-emerald-500/20 text-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4 animate-bounce">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">অভিনন্দন! আপনি কুইজটি সম্পন্ন করেছেন 🎉</h2>
+            <p class="text-slate-600 dark:text-slate-300 mb-6">আপনার অর্জিত স্কোর: <span id="finalScore" class="font-bold text-emerald-500 text-2xl">0</span></p>
+            <button onclick="resetQuiz()" class="px-6 py-3 rounded-2xl bg-gradient-to-r from-royal-600 to-royal-800 hover:from-royal-700 hover:to-royal-900 text-white font-bold shadow-lg shadow-royal-600/30 transition-all hover:scale-105 active:scale-95">
+                পুনরায় চেষ্টা করুন
+            </button>
+        </div>
+    </main>
+
+    <script>
+        // Quiz Data - Source Tags extracted to Question Header
+        const quizData = [
+    {
+        id: 1,
+        question: "পরিণত মানুষের কঙ্কালতন্ত্র কয়টি অস্থি নিয়ে গঠিত?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "২০৬টি" },
+            { key: "খ", text: "২৯০টি" },
+            { key: "গ", text: "৩০০টি" },
+            { key: "ঘ", text: "৩৬০টি" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "২০৬টি",
+        explanation: "পরিণত মানুষের কঙ্কালতন্ত্র ২০৬টি অস্থি নিয়ে গঠিত।"
+    },
+    {
+        id: 2,
+        question: "অস্থির আবরণীর নাম কী?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "পেরিঅস্টিয়াম" },
+            { key: "খ", text: "পেরিকন্ড্রিয়াম" },
+            { key: "গ", text: "পেরিকার্ডিয়াম" },
+            { key: "ঘ", text: "প্লিউরা" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "পেরিঅস্টিয়াম",
+        explanation: "অস্থির বাইরের আবরণকে পেরিঅস্টিয়াম বলা হয়।"
+    },
+    {
+        id: 3,
+        question: "নিচের কোনটি মৃত অস্থি কোষ?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "অস্টিওব্লাস্ট" },
+            { key: "খ", text: "অস্টিওসাইট" },
+            { key: "গ", text: "কন্ড্রোসাইট" },
+            { key: "ঘ", text: "অস্টিওক্লাস্ট" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "অস্টিওসাইট",
+        explanation: "Osteoblast হতে Osteocyte উৎপন্ন হয়, তবে এটি পরবর্তীতে আর বিভাজিত হয় না বলে একে নিষ্ক্রিয়/মৃত কোষ বলা হয়।"
+    },
+    {
+        id: 4,
+        question: "নিম্নের কোন অস্থিতে হ্যাভারশিয়ান তন্ত্র থাকে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "প্যারাইটাল" },
+            { key: "খ", text: "অক্সিপিটাল" },
+            { key: "গ", text: "ফিমার" },
+            { key: "ঘ", text: "ফ্রন্টাল" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "ফিমার",
+        explanation: "নিরেট অস্থি যেমন ফিমারে হ্যাভারশিয়ান তন্ত্র বিদ্যমান।"
+    },
+    {
+        id: 5,
+        question: "কোনটি অস্থির শারীরবৃত্তীয় কাজ?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "দেহ কাঠামো গঠন" },
+            { key: "খ", text: "চলন" },
+            { key: "গ", text: "ভারবহন" },
+            { key: "ঘ", text: "খনিজ লবণ সঞ্চয়" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "খনিজ লবণ সঞ্চয়",
+        explanation: "খনিজ লবণ সঞ্চয় করা অস্থির অন্যতম শারীরবৃত্তীয় কাজ।"
+    },
+    {
+        id: 6,
+        question: "অক্ষীয় কঙ্কালের অংশ কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "ফ্রন্টাল অস্থি" },
+            { key: "খ", text: "ক্ল্যাভিকল" },
+            { key: "গ", text: "অক্সিপিটাল অস্থি" },
+            { key: "ঘ", text: "কার্পাল" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "ফ্রন্টাল অস্থি",
+        explanation: "ফ্রন্টাল এবং অক্সিপিটাল উভয়ই করোটির অস্থি হওয়ায় এগুলো অক্ষীয় কঙ্কালের অংশ।"
+    },
+    {
+        id: 7,
+        question: "মুখমন্ডলীয় অস্থিতে ভোমার এর সংখ্যা কত?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "০১টি" },
+            { key: "খ", text: "০২টি" },
+            { key: "গ", text: "০৩টি" },
+            { key: "ঘ", text: "০৪টি" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "০১টি",
+        explanation: "মানুষের মুখমণ্ডলীয় অস্থির মধ্যে ভোমার একটি বিজোড় অস্থি, যার সংখ্যা ১টি।"
+    },
+    {
+        id: 8,
+        question: "মুখমণ্ডলের আয়তাকার অস্থি কোনটি?",
+        source: "আজমল",
+        options: [
+            { key: "ক", text: "জাইগোম্যাটিক" },
+            { key: "খ", text: "ল্যাক্রিমাল" },
+            { key: "গ", text: "ন্যাসাল" },
+            { key: "ঘ", text: "প্যালেটাইন" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "ন্যাসাল",
+        explanation: "ন্যাসাল অস্থি মুখমণ্ডলের আয়তাকার অস্থি।"
+    },
+    {
+        id: 9,
+        question: "মানুষের করোটিকার অস্থির সংখ্যা কয়টি?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "১২টি" },
+            { key: "খ", text: "১০টি" },
+            { key: "গ", text: "৮টি" },
+            { key: "ঘ", text: "৯টি" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "৮টি",
+        explanation: "মানব করোটিকায় মোট ৮টি অস্থি বিদ্যমান।"
+    },
+    {
+        id: 10,
+        question: "অস্থিমজ্জা থেকে লোহিত রক্তকণিকা সৃষ্টির হার কত?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "২৬ লক্ষ/সেকেন্ড" },
+            { key: "খ", text: "৩২ লক্ষ/সেকেন্ড" },
+            { key: "গ", text: "৩৫ লক্ষ/সেকেন্ড" },
+            { key: "ঘ", text: "৪০ লক্ষ/সেকেন্ড" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "২৬ লক্ষ/সেকেন্ড",
+        explanation: "অস্থিমজ্জা থেকে প্রতি সেকেন্ডে প্রায় ২৬ লক্ষ লোহিত রক্তকণিকা তৈরি হয়।"
+    },
+    {
+        id: 11,
+        question: "কত বয়সের মানুষের অস্থির ঘনত্ব সবচেয়ে বেশি?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "২৫ বছর" },
+            { key: "খ", text: "৩৫ বছর" },
+            { key: "গ", text: "৪৫ বছর" },
+            { key: "ঘ", text: "২১ বছর" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "২১ বছর",
+        explanation: "মানুষের ২১ বছর বয়সে অস্থির ঘনত্ব সর্বোচ্চ পর্যায়ে পৌঁছায়।"
+    },
+    {
+        id: 12,
+        question: "অস্থির কোষ থেকে কোন হরমোন ক্ষরিত হয়?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "নরঅ্যাড্রেনালিন" },
+            { key: "খ", text: "অস্টিওক্যালসিন" },
+            { key: "গ", text: "মিনারেলোকটিকয়েড" },
+            { key: "ঘ", text: "অক্সিটোসিন" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "অস্টিওক্যালসিন",
+        explanation: "অস্থির কোষ থেকে অস্টিওক্যালসিন নামক হরমোন ক্ষরিত হয়ে থাকে।"
+    },
+    {
+        id: 13,
+        question: "মানবশিশু জন্মের সময় দেহে কয়টি অস্থি থাকে?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "২০৬টি" },
+            { key: "খ", text: "২৯০টি" },
+            { key: "গ", text: "৩০০টি" },
+            { key: "ঘ", text: "৩৬০টি" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "৩০০টি",
+        explanation: "নবজাতক শিশুর শরীরে মোট অস্থির সংখ্যা থাকে প্রায় ৩০০টি।"
+    },
+    {
+        id: 14,
+        question: "করোটিকার মেঝে গঠনকারী অস্থি কোনটি?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "টেম্পোরাল" },
+            { key: "খ", text: "অক্সিপিটাল" },
+            { key: "গ", text: "স্ফেনয়েড" },
+            { key: "ঘ", text: "প্যারাইটাল" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "স্ফেনয়েড",
+        explanation: "স্ফেনয়েড অস্থিটি করোটিকার মেঝের মধ্যাংশ গঠন করে।"
+    },
+    {
+        id: 15,
+        question: "ফোরামেন ম্যাগনাম কোথায় থাকে?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "বক্ষ অস্থিচক্রে" },
+            { key: "খ", text: "করোটিতে" },
+            { key: "গ", text: "বক্ষপিঞ্জরে" },
+            { key: "ঘ", text: "শ্রোণিচক্রে" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "করোটিতে",
+        explanation: "করোটির অক্সিপিটাল অস্থির গোড়ায় বড় ছিদ্র ফোরামেন ম্যাগনাম অবস্থিত।"
+    },
+    {
+        id: 16,
+        question: "কোনটি করোটির জোড় অস্থি?",
+        source: "মাজেদা+আলীম",
+        options: [
+            { key: "ক", text: "স্ফেনয়েড" },
+            { key: "খ", text: "অক্সিপিটাল" },
+            { key: "গ", text: "ফ্রন্টাল" },
+            { key: "ঘ", text: "প্যারাইটাল" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "প্যারাইটাল",
+        explanation: "করোটিকার জোড় অস্থিগুলো হলো প্যারাইটাল ও টেম্পোরাল।"
+    },
+    {
+        id: 17,
+        question: "মানুষের মুখমণ্ডলীয় অস্থি সংখ্যা কয়টি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "৮ টি" },
+            { key: "খ", text: "১২ টি" },
+            { key: "গ", text: "১৪ টি" },
+            { key: "ঘ", text: "৩৩টি" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "১৪ টি",
+        explanation: "মানব কঙ্কালের মুখমণ্ডল অংশে ১৪টি অস্থি থাকে।"
+    },
+    {
+        id: 18,
+        question: "মানবদেহে অক্ষীয় কঙ্কালে অস্থি কতটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "৫০ টি" },
+            { key: "খ", text: "৬০ টি" },
+            { key: "গ", text: "৭০ টি" },
+            { key: "ঘ", text: "৮০ টি" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "৮০ টি",
+        explanation: "অক্ষীয় কঙ্কালতন্ত্র করোটি, মেরুদণ্ড ও বক্ষপিঞ্জর নিয়ে গঠিত যার মোট অস্থি ৮০টি।"
+    },
+    {
+        id: 19,
+        question: "মানুষের উপাঙ্গীয় কঙ্কালে অস্থির সংখ্যা কতটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "১২৪ টি" },
+            { key: "খ", text: "১২৫ টি" },
+            { key: "গ", text: "১২৬ টি" },
+            { key: "ঘ", text: "১২৭ টি" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "১২৬ টি",
+        explanation: "মানবদেহের উপাঙ্গীয় কঙ্কালে মোট ১২৬টি অস্থি থাকে।"
+    },
+    {
+        id: 20,
+        question: "মানুষের করোটির অস্থির সংখ্যা কতটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "২৯ টি" },
+            { key: "খ", text: "৩০ টি" },
+            { key: "গ", text: "৩১ টি" },
+            { key: "ঘ", text: "৩৩ টি" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "২৯ টি",
+        explanation: "মানুষের করোটি মোট ২৯টি অস্থি নিয়ে গঠিত।"
+    },
+    {
+        id: 21,
+        question: "মানবদেহের সবচেয়ে বড় অস্থি কোনটি?",
+        source: "আজমল",
+        options: [
+            { key: "ক", text: "হিউমেরাস" },
+            { key: "খ", text: "ফিমার" },
+            { key: "গ", text: "স্টার্নাম" },
+            { key: "ঘ", text: "টিবিয়া" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "ফিমার",
+        explanation: "মানবদেহের সবচেয়ে দীর্ঘ ও বড় অস্থি হলো ফিমার।"
+    },
+    {
+        id: 22,
+        question: "নিচের কোনটি করোটিকার অস্থি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "প্যালেটাইন" },
+            { key: "খ", text: "ল্যাক্রিমাল" },
+            { key: "গ", text: "প্যারাইটাল" },
+            { key: "ঘ", text: "ভোমার" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "প্যারাইটাল",
+        explanation: "প্যারাইটাল করোটিকার একটি অন্যতম জোড় অস্থি।"
+    },
+    {
+        id: 23,
+        question: "নিচের কোন অস্থিতে ফোরামেন ম্যাগনাম বিদ্যামান?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "ফ্রন্টাল অস্থি" },
+            { key: "খ", text: "প্যারাইটাল অস্থি" },
+            { key: "গ", text: "অক্সিপিটাল অস্থি" },
+            { key: "ঘ", text: "টেম্পোরাল অস্থি" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "অক্সিপিটাল অস্থি",
+        explanation: "অক্সিপিটাল অস্থিতে অবস্থিত বৃহৎ ছিদ্রটিই হলো ফোরামেন ম্যাগনাম।"
+    },
+    {
+        id: 24,
+        question: "করোটিকার অংশ নিম্নের কোনটি?",
+        source: "আজমল",
+        options: [
+            { key: "ক", text: "ম্যাক্সিলা" },
+            { key: "খ", text: "অক্সিপিটাল" },
+            { key: "গ", text: "ন্যাসাল" },
+            { key: "ঘ", text: "জাইগোমেটিক" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "অক্সিপিটাল",
+        explanation: "অক্সিপিটাল হলো করোটিকার একটি বিজোড় অস্থি।"
+    },
+    {
+        id: 25,
+        question: "মানুষের করোটিকার অস্থি কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "স্ফেনয়েড" },
+            { key: "খ", text: "জাইগোম্যাটিক" },
+            { key: "গ", text: "ভোমার" },
+            { key: "ঘ", text: "প্যালাটাইন" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "স্ফেনয়েড",
+        explanation: "স্ফেনয়েড অস্থি করোটিকার ৮টি অস্থির একটি।"
+    },
+    {
+        id: 26,
+        question: "মাথার খুলিতে কয়টি হাড় রয়েছে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "23" },
+            { key: "খ", text: "33" },
+            { key: "গ", text: "29" },
+            { key: "ঘ", text: "17" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "29",
+        explanation: "মাথার খুলি বা করোটিতে মোট ২৯টি হাড় অবস্থিত।"
+    },
+    {
+        id: 27,
+        question: "কোনটি মানুষের মুখমণ্ডলীয় অস্থি নয়?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "ন্যাসাল অস্থি" },
+            { key: "খ", text: "ম্যাক্সিলা অস্থি" },
+            { key: "গ", text: "এথময়েড অস্থি" },
+            { key: "ঘ", text: "ম্যান্ডিবল অস্থি" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "এথময়েড অস্থি",
+        explanation: "এথময়েড হলো করোটিকার অস্থি, এটি মুখমণ্ডলীয় অস্থি নয়।"
+    },
+    {
+        id: 28,
+        question: "স্ফেনয়েড অস্থি কঙ্কালের কোন অংশে থাকে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "করোটিকা" },
+            { key: "খ", text: "মুখমণ্ডল" },
+            { key: "গ", text: "পেকটোরাল গার্ডল" },
+            { key: "ঘ", text: "মেরুদণ্ড" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "করোটিকা",
+        explanation: "স্ফেনয়েড কঙ্কালের করোটিকা অংশে অবস্থিত।"
+    },
+    {
+        id: 29,
+        question: "সাধারণ হাড়ভাঙ্গার অপর নাম কী?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "যৌগিক হাড়ভাঙ্গা" },
+            { key: "খ", text: "উন্মুক্ত হাড়ভাঙ্গা" },
+            { key: "গ", text: "জটিল হাড়ভাঙ্গা" },
+            { key: "ঘ", text: "বদ্ধ হাড়ভাঙ্গা" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "বদ্ধ হাড়ভাঙ্গা",
+        explanation: "সাধারণ হাড়ভাঙ্গায় ত্বক অক্ষত থাকে বলে একে বদ্ধ হাড়ভাঙ্গা বলা হয়।"
+    },
+    {
+        id: 30,
+        question: "করোটির কোন ছিদ্রের মধ্যে দিয়ে Spinal cord প্রসারিত হয়?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "ট্রান্সভার্স ফোরামেন" },
+            { key: "খ", text: "অবটুরেটর ফোরামেন" },
+            { key: "গ", text: "ফোরামেন ম্যাগনাম" },
+            { key: "ঘ", text: "ইন্টার ভার্টিব্রাল ফোরামেন" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "ফোরামেন ম্যাগনাম",
+        explanation: "ফোরামেন ম্যাগনাম নামক ছিদ্র দিয়ে সুষুম্নাকাণ্ড বা Spinal cord প্রসারিত হয়।"
+    },
+    {
+        id: 31,
+        question: "মানুষের অক্ষিকোটরের কিছু অংশজুড়ে অবস্থান করে কোন অস্থি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "ম্যাক্সিলারি" },
+            { key: "খ", text: "ফ্রন্টাল" },
+            { key: "গ", text: "স্ফেনয়েড" },
+            { key: "ঘ", text: "এথময়েড" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "এথময়েড",
+        explanation: "এথময়েড অস্থি অক্ষিকোটরের ভেতরের প্রাচীর গঠনে ভূমিকা রাখে।"
+    },
+    {
+        id: 32,
+        question: "বক্ষপিঞ্জর গঠনকারী অস্থির সংখ্যা কয়টি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "২১ টি" },
+            { key: "খ", text: "২৫ টি" },
+            { key: "গ", text: "৩১ টি" },
+            { key: "ঘ", text: "৩৫ টি" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "২৫ টি",
+        explanation: "বক্ষপিঞ্জর ২৪টি পশুকা এবং ১টি স্টার্নামসহ মোট ২৫টি অস্থি দিয়ে গঠিত।"
+    },
+    {
+        id: 33,
+        question: "নিচের কোনটি মানুষের অক্ষীয় কঙ্কালতন্ত্রের অংশ?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "শ্রোণি অস্থিচক্র" },
+            { key: "খ", text: "বক্ষ অস্থিচক্র" },
+            { key: "গ", text: "করোটি" },
+            { key: "ঘ", text: "ফিমার" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "করোটি",
+        explanation: "করোটি মানবদেহের অক্ষীয় কঙ্কালের প্রধান অংশ।"
+    },
+    {
+        id: 34,
+        question: "দ্বিতীয় কশেরুকার অপর নাম কী?",
+        source: "আজমল",
+        options: [
+            { key: "ক", text: "লাম্বার" },
+            { key: "খ", text: "থোরাসিক" },
+            { key: "গ", text: "স্যাক্রাল" },
+            { key: "ঘ", text: "অ্যাক্সিস" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "অ্যাক্সিস",
+        explanation: "২য় গ্রীবাদেশীয় (সারভাইক্যাল) কশেরুকাকে অ্যাক্সিস বলা হয়।"
+    },
+    {
+        id: 35,
+        question: "মানুষের সারভাইক্যাল বা স্কন্ধদেশীয় কশেরুকার সংখ্যা কত?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "১২" },
+            { key: "খ", text: "৭" },
+            { key: "গ", text: "৫" },
+            { key: "ঘ", text: "৪" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "৭",
+        explanation: "মানুষের গ্রীবাদেশীয় বা সারভাইক্যাল কশেরুকার সংখ্যা ৭টি।"
+    },
+    {
+        id: 36,
+        question: "ওডোনটয়েড প্রসেস বিদ্যমান নিচের কোন কশেরুকায়?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "গ্রীবাদেশীয়" },
+            { key: "খ", text: "বক্ষদেশীয়" },
+            { key: "গ", text: "কটিদেশীয়" },
+            { key: "ঘ", text: "পুচ্ছদেশীয়" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "গ্রীবাদেশীয়",
+        explanation: "২য় গ্রীবাদেশীয় কশেরুকা (অ্যাক্সিস)-এ ওডোন্টোয়েড প্রসেস বিদ্যমান।"
+    },
+    {
+        id: 37,
+        question: "অ্যাক্সিস কশেরুকার বৈশিষ্ট্য কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "অস্থিটি দেখতে আংটির মত" },
+            { key: "খ", text: "সেন্ট্রাম ও স্পাইনাল প্রসেস অনুপস্থিত" },
+            { key: "গ", text: "সেন্ট্রামের সম্মুখ প্রান্তে ওডোন্টোয়েড প্রসেস থাকে" },
+            { key: "ঘ", text: "ভার্টিব্রাল ফোরামেন বড় ও গোলাকার" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "সেন্ট্রামের সম্মুখ প্রান্তে ওডোন্টোয়েড প্রসেস থাকে",
+        explanation: "অ্যাক্সিস কশেরুকার সেন্ট্রামের সম্মুখ প্রান্তে ওডোন্টোয়েড প্রসেস থাকে।"
+    },
+    {
+        id: 38,
+        question: "মানুষের রূপান্তরিত কশেরুকার সংখ্যা কত?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "নয়টি" },
+            { key: "খ", text: "পাঁচটি" },
+            { key: "গ", text: "চারটি" },
+            { key: "ঘ", text: "দুইটি" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "দুইটি",
+        explanation: "মানবদেহে স্যাক্রাম ও কক্কিক্স হলো দুটি রূপান্তরিত কশেরুকা।"
+    },
+    {
+        id: 39,
+        question: "মানুষের বক্ষদেশীয় অঞ্চলে কশেরুকা কয়টি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "৪" },
+            { key: "খ", text: "৫" },
+            { key: "গ", text: "৭" },
+            { key: "ঘ", text: "১২" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "১২",
+        explanation: "মানুষের বক্ষদেশীয় বা থোরাসিক অঞ্চলে মোট ১২টি কশেরুকা থাকে।"
+    },
+    {
+        id: 40,
+        question: "মেরুদণ্ডের কোন অংশে সবচেয়ে বেশি কশেরুকা থাকে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "লাম্বার" },
+            { key: "খ", text: "স্যাক্রাল" },
+            { key: "গ", text: "সারভাইকাল" },
+            { key: "ঘ", text: "থোরাসিক" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "থোরাসিক",
+        explanation: "থোরাসিক বা বক্ষদেশীয় অংশে সর্বোচ্চ ১২টি কশেরুকা বিদ্যমান।"
+    },
+    {
+        id: 41,
+        question: "অ্যাক্সিস কোন অঞ্চলের কশেরুকা?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "উদর দেশীয়" },
+            { key: "খ", text: "গ্রীবাদেশীয়" },
+            { key: "গ", text: "বক্ষদেশীয়" },
+            { key: "ঘ", text: "শ্রোণিদেশীয়" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "গ্রীবাদেশীয়",
+        explanation: "অ্যাক্সিস হলো ২য় গ্রীবাদেশীয় (সারভাইক্যাল) কশেরুকা।"
+    },
+    {
+        id: 42,
+        question: "থোরাসিক কশেরুকার সংখ্যা কয়টি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "৪ টি" },
+            { key: "খ", text: "৫ টি" },
+            { key: "গ", text: "৭ টি" },
+            { key: "ঘ", text: "১২ টি" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "১২ টি",
+        explanation: "থোরাসিক অঞ্চলে ১২টি কশেরুকা অবস্থান করে।"
+    },
+    {
+        id: 43,
+        question: "কোন কশেরুকাতে ট্রান্সভার্স ফোরামেন পাওয়া যায় না?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "স্যাক্রাম" },
+            { key: "খ", text: "ভার্টিব্রা প্রমিন্যান্স" },
+            { key: "গ", text: "অ্যাটলাস" },
+            { key: "ঘ", text: "অ্যাক্সিস" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "স্যাক্রাম",
+        explanation: "স্যাক্রাম কশেরুকায় কোনো ট্রান্সভার্স ফোরামেন থাকে না।"
+    },
+    {
+        id: 44,
+        question: "সুষুম্নাকাণ্ডকে সুরক্ষিত রাখে কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "বক্ষ অস্থিচক্র" },
+            { key: "খ", text: "মেরুদণ্ড" },
+            { key: "গ", text: "বক্ষপিঞ্জর" },
+            { key: "ঘ", text: "করোটি" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "মেরুদণ্ড",
+        explanation: "মেরুদণ্ড সুষুম্নাকাণ্ডকে বেষ্টন করে সুরক্ষিত রাখে।"
+    },
+    {
+        id: 45,
+        question: "নিচের কোনটি করোটির অস্থি নয়?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "প্যারাইটাল" },
+            { key: "খ", text: "ফ্রন্টাল" },
+            { key: "গ", text: "ট্রান্সভার্স প্রসেস" },
+            { key: "ঘ", text: "অক্সিপিটাল" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "ট্রান্সভার্স প্রসেস",
+        explanation: "ট্রান্সভার্স প্রসেস হলো কশেরুকার বর্ধিত অংশ, করোটির অংশ নয়।"
+    },
+    {
+        id: 46,
+        question: "মানুষের গ্রীবাদেশীয় কোন কশেরুকাটির নাম অ্যাক্সিস?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "ষষ্ঠ" },
+            { key: "খ", text: "সপ্তম" },
+            { key: "গ", text: "প্রথম" },
+            { key: "ঘ", text: "দ্বিতীয়" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "দ্বিতীয়",
+        explanation: "২য় গ্রীবাদেশীয় কশেরুকার নির্দিষ্ট নাম অ্যাক্সিস।"
+    },
+    {
+        id: 47,
+        question: "মানুষের মেরুদণ্ডে লাম্বার কশেরুকার সংখ্যা-",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "৪" },
+            { key: "খ", text: "৫" },
+            { key: "গ", text: "৬" },
+            { key: "ঘ", text: "৭" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "৫",
+        explanation: "মানুষের মেরুদণ্ডে লাম্বার (কটিদেশীয়) কশেরুকার সংখ্যা ৫টি।"
+    },
+    {
+        id: 48,
+        question: "মানুষের মেরুদণ্ডে মোট কয়টি অস্থি রয়েছে?",
+        source: "হাসান",
+        options: [
+            { key: "ক", text: "২৩ টি" },
+            { key: "খ", text: "৪৩ টি" },
+            { key: "গ", text: "৫৩ টি" },
+            { key: "ঘ", text: "৩৩ টি" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "৩৩ টি",
+        explanation: "শিশু অবস্থায় মানুষের মেরুদণ্ডে মোট ৩৩টি কশেরুকা/অস্থি থাকে।"
+    },
+    {
+        id: 49,
+        question: "নিচের কোনটি হাতের কব্জিতে থাকে না?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "Navicular" },
+            { key: "খ", text: "Scaphoid" },
+            { key: "গ", text: "Trapezoid" },
+            { key: "ঘ", text: "Lunate" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "Navicular",
+        explanation: "Navicular হলো পায়ের গোড়ালির (টার্সাল) অস্থি, হাতের কব্জির নয়।"
+    },
+    {
+        id: 50,
+        question: "কোস্টাল আর্চ নির্মাণ করে-",
+        source: "আজমল",
+        options: [
+            { key: "ক", text: "১ম থেকে ৭ম পশুকা" },
+            { key: "খ", text: "৮ম, ৯ম ও ১০ম পশুকা" },
+            { key: "গ", text: "৮ম ও ১০ম পশুকা" },
+            { key: "ঘ", text: "১১শ ও ১২শ পশুকা" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "৮ম, ৯ম ও ১০ম পশুকা",
+        explanation: "৮ম, ৯ম ও ১০ম পশুকার তরুণাস্থি একত্রিত হয়ে কোস্টাল আর্চ গঠন করে।"
+    },
+    {
+        id: 51,
+        question: "মানবদেহে গ্লিনয়েড গহ্বর কোথায় থাকে?",
+        source: "মাজেদা+আলীম",
+        options: [
+            { key: "ক", text: "বক্ষপিঞ্জরে" },
+            { key: "খ", text: "বক্ষ অস্থিচক্রে" },
+            { key: "গ", text: "করোটিতে" },
+            { key: "ঘ", text: "শ্রোণিচক্রে" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "বক্ষ অস্থিচক্রে",
+        explanation: "স্ক্যাপুলার বহির্যাঙ্গে গ্লেনয়েড গহ্বর থাকে, যা বক্ষ অস্থিচক্রের অংশ।"
+    },
+    {
+        id: 52,
+        question: "বক্ষপিঞ্জর গঠনকারী অস্থির সংখ্যা কয়টি?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "২১টি" },
+            { key: "খ", text: "২৫টি" },
+            { key: "গ", text: "৩১টি" },
+            { key: "ঘ", text: "৩৬টি" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "২৫টি",
+        explanation: "২৪টি পশুকা এবং ১টি স্টার্নাম নিয়ে মোট ২৫টি অস্থি দিয়ে বক্ষপিঞ্জর গঠিত।"
+    },
+    {
+        id: 53,
+        question: "মানুষের কব্জিতে (Carpal Region) হাড়ের সংখ্যা কত?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "৫ টি" },
+            { key: "খ", text: "৮ টি" },
+            { key: "গ", text: "৭ টি" },
+            { key: "ঘ", text: "১০ টি" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "৮ টি",
+        explanation: "মানুষের প্রতিটি হাতের কব্জিতে বা কার্পাল অঞ্চলে ৮টি করে হাড় থাকে।"
+    },
+    {
+        id: 54,
+        question: "নিচের কোনটি বক্ষ অস্থি চক্রের হাড়?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "ক্ল্যাভিকল" },
+            { key: "খ", text: "স্ফেনয়েড" },
+            { key: "গ", text: "এথময়েড" },
+            { key: "ঘ", text: "পিউবিস" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "ক্ল্যাভিকল",
+        explanation: "বক্ষ অস্থিচক্রের প্রধান হাড়গুলো হলো ক্ল্যাভিকল এবং স্ক্যাপুলা।"
+    },
+    {
+        id: 55,
+        question: "নিচের কোনটি ক্ল্যাভিকলের বৈশিষ্ট্য?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "এটি একটি খাঁটো অস্থি" },
+            { key: "খ", text: "এটি একটি বাঁকানো অস্থি" },
+            { key: "গ", text: "এই অস্থির মজ্জা গহ্বর আছে" },
+            { key: "ঘ", text: "এক প্রান্ত হিউমেরাসের সাথে যুক্ত থাকে" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "এটি একটি বাঁকানো অস্থি",
+        explanation: "ক্ল্যাভিকল একটি \"S\" বা \"f\" আকৃতির বাঁকানো নিরেট অস্থি।"
+    },
+    {
+        id: 56,
+        question: "নিম্নের কোনটি হাতের কব্জির অস্থি নয়?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "পিসিফর্ম" },
+            { key: "খ", text: "ট্রাপিজিয়াম" },
+            { key: "গ", text: "হ্যামেট" },
+            { key: "ঘ", text: "ইথময়েড" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "ইথময়েড",
+        explanation: "ইথময়েড করোটিকার অস্থি, এটি হাতের কব্জির (কার্পাল) অস্থি নয়।"
+    },
+    {
+        id: 57,
+        question: "নিম্নের কোন অস্থিতে মজ্জা গহ্বর নাই?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "ইশ্চিয়াম" },
+            { key: "খ", text: "স্টার্নাম" },
+            { key: "গ", text: "কার্পাল" },
+            { key: "ঘ", text: "ক্ল্যাভিকল" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "ক্ল্যাভিকল",
+        explanation: "ক্ল্যাভিকল একটি লম্বা অস্থি হওয়া সত্ত্বেও এতে কোনো মজ্জা গহ্বর থাকে না।"
+    },
+    {
+        id: 58,
+        question: "কোন অস্থিতে জুগুলার নচ থাকে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "হিউমেরাস" },
+            { key: "খ", text: "স্টার্নাম" },
+            { key: "গ", text: "স্ক্যাপুলা" },
+            { key: "ঘ", text: "ক্ল্যাভিকল" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "স্টার্নাম",
+        explanation: "স্টার্নামের ম্যানুব্রিয়ামের ঊর্ধ্বপ্রান্তে জুগুলার নচ অবস্থিত।"
+    },
+    {
+        id: 59,
+        question: "ডেলটয়েড টিউবারসিটি কোন অস্থির অংশ?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "আলনা" },
+            { key: "খ", text: "রেডিয়াস" },
+            { key: "গ", text: "স্ক্যাপুলা" },
+            { key: "ঘ", text: "হিউমেরাস" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "হিউমেরাস",
+        explanation: "হিউমেরাসের দেহের মাঝামাঝি অংশে ডেলটয়েড টিউবারসিটি বা ডেল্টয়েড রিজ থাকে।"
+    },
+    {
+        id: 60,
+        question: "বক্ষ অস্থিচক্রের অস্থি হলো-",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "স্টার্নাম" },
+            { key: "খ", text: "ইশ্চিয়াম" },
+            { key: "গ", text: "পশুকা" },
+            { key: "ঘ", text: "ক্ল্যাভিকল" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "ক্ল্যাভিকল",
+        explanation: "ক্ল্যাভিকল এবং স্ক্যাপুলা বক্ষ অস্থিচক্রের অস্থি।"
+    },
+    {
+        id: 61,
+        question: "'জিফয়েড প্রসেস' কোথায় অবস্থিত?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "স্ক্যাপুলা" },
+            { key: "খ", text: "স্যাক্রাম" },
+            { key: "গ", text: "স্টার্নাম" },
+            { key: "ঘ", text: "অ্যাটলাস" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "স্টার্নাম",
+        explanation: "স্টার্নামের সর্বনিম্ন সরু অংশকে জিফয়েড প্রসেস বলে।"
+    },
+    {
+        id: 62,
+        question: "নিম্নের কোনটি হাতের তালুর অস্থি নয়?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "পিসিফর্ম" },
+            { key: "খ", text: "ট্রাপিজিয়াম" },
+            { key: "গ", text: "হেমেট" },
+            { key: "ঘ", text: "ইথময়েড" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "ইথময়েড",
+        explanation: "ইথময়েড করোটিকার অস্থি, এটি হাতের অস্থি নয়।"
+    },
+    {
+        id: 63,
+        question: "হিউমেরাস এর অবস্থান কোথায়?",
+        source: "হাসান",
+        options: [
+            { key: "ক", text: "হাতে" },
+            { key: "খ", text: "পায়ে" },
+            { key: "গ", text: "বক্ষপিঞ্জরে" },
+            { key: "ঘ", text: "শ্রোণিচক্রে" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "হাতে",
+        explanation: "হিউমেরাস মানবদেহের বাহু বা হাতের অস্থি।"
+    },
+    {
+        id: 64,
+        question: "মানবদেহের কোন অস্থিতে 'ডেল্টয়েড রিজ' বিদ্যমান?",
+        source: "হাসান",
+        options: [
+            { key: "ক", text: "হিউমেরাস" },
+            { key: "খ", text: "ফিমার" },
+            { key: "গ", text: "স্টার্নাম" },
+            { key: "ঘ", text: "রেডিয়াস" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "হিউমেরাস",
+        explanation: "হিউমেরাস অস্থির গাত্রে ডেল্টয়েড রিজ অবস্থিত।"
+    },
+    {
+        id: 65,
+        question: "হিউমেরাস ও ফিমারের মস্তকে কোন ধরনের তরুণাস্থি থাকে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "শ্বেততন্তুময় তরুণাস্থি" },
+            { key: "খ", text: "চুনময় তরুণাস্থি" },
+            { key: "গ", text: "স্বচ্ছ তরুণাস্থি" },
+            { key: "ঘ", text: "স্থিতিস্থাপক তরুণাস্থি" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "স্থিতিস্থাপক তরুণাস্থি",
+        explanation: "হিউমেরাস ও ফিমারের মস্তকে চুনময় বা ক্যালসিফাইড তরুণাস্থি থাকে।"
+    },
+    {
+        id: 66,
+        question: "অবটুরেটর ফোরামেন কোথায় থাকে?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "বক্ষ অস্থিচক্রে" },
+            { key: "খ", text: "বক্ষপিঞ্জরে" },
+            { key: "গ", text: "করোটিতে" },
+            { key: "ঘ", text: "শ্রোণিচক্রে" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "শ্রোণিচক্রে",
+        explanation: "শ্রোণিচক্রের হিপবোনে অবটুরেটর ফোরামেন অবস্থিত।"
+    },
+    {
+        id: 67,
+        question: "ফিমারের বৈশিষ্ট্য কোনটি?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "ডেল্টয়েড রিজ" },
+            { key: "খ", text: "ট্রোক্যান্টার" },
+            { key: "গ", text: "ক্ল্যাভিকল" },
+            { key: "ঘ", text: "ট্রকলিয়া" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "ট্রোক্যান্টার",
+        explanation: "ফিমারের মস্তকের নিচে বড় ও ছোট ট্রোক্যান্টার (Trochanter) বিদ্যমান।"
+    },
+    {
+        id: 68,
+        question: "প্রাপ্ত বয়স্ক মানুষে হিপবোন গঠনকারী অস্থি হলো-",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "পিসিফর্ম, পিউবিস ও স্ক্যাপুলা" },
+            { key: "খ", text: "ইশ্চিয়াম, লুনেট ও ইশ্চিয়াম" },
+            { key: "গ", text: "লুনেট, হ্যামেট ও ইশ্চিয়াম" },
+            { key: "ঘ", text: "পিউবিস, ইশ্চিয়াম ও ইলিয়াম" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "পিউবিস, ইশ্চিয়াম ও ইলিয়াম",
+        explanation: "তিনটি অস্থি—ইলিয়াম, ইশ্চিয়াম ও পিউবিস একীভূত হয়ে হিপবোন গঠন করে।"
+    },
+    {
+        id: 69,
+        question: "শ্রোণিচক্রের অস্থি কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "কক্কিক্স" },
+            { key: "খ", text: "স্ক্যাপুলা" },
+            { key: "গ", text: "পিউবিস" },
+            { key: "ঘ", text: "ক্ল্যাভিকল" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "পিউবিস",
+        explanation: "পিউবিস শ্রোণিচক্রের (হিপবোন) একটি অন্যতম অংশ।"
+    },
+    {
+        id: 70,
+        question: "মানুষে বৃহত্তম অস্থির অংশ কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "টিউবার্কল" },
+            { key: "খ", text: "কন্ডাইল" },
+            { key: "গ", text: "ট্রকলিয়া" },
+            { key: "ঘ", text: "ডেল্টয়েড রিজ" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "কন্ডাইল",
+        explanation: "ফিমার মানবদেহের বৃহত্তম অস্থি, যার নিম্নপ্রান্তে কন্ডাইল বিদ্যমান।"
+    },
+    {
+        id: 71,
+        question: "সিসাময়েড অস্থি কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "পশুকা" },
+            { key: "খ", text: "প্যাটেলা" },
+            { key: "গ", text: "কিউবয়েড" },
+            { key: "ঘ", text: "টিবিয়া" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "প্যাটেলা",
+        explanation: "প্যাটেলা এবং পিসিফর্ম হলো সিসাময়েড বোন।"
+    },
+    {
+        id: 72,
+        question: "কোনটি মানব দেহের টার্সাল অস্থির অন্তর্ভুক্ত নয়?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "ক্যালকেনিয়াস" },
+            { key: "খ", text: "ট্রাপেজিয়াম" },
+            { key: "গ", text: "কুনিফর্ম" },
+            { key: "ঘ", text: "কিউবয়েড" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "ট্রাপেজিয়াম",
+        explanation: "ট্রাপেজিয়াম হলো কার্পাল বোন (হাতের অস্থি), এটি টার্সাল অস্থি নয়।"
+    },
+    {
+        id: 73,
+        question: "ফিমারের মস্তক কোথায় আটকানো থাকে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "গ্লেনয়েড গহ্বর" },
+            { key: "খ", text: "অ্যাসিটাবুলাম" },
+            { key: "গ", text: "অবটুরেটর ফোরামেন" },
+            { key: "ঘ", text: "ইন্টারকন্ডাইলার নচ" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "অ্যাসিটাবুলাম",
+        explanation: "শ্রোণিচক্রের অ্যাসিটাবুলাম নামক গহ্বরে ফিমারের মস্তক আটকানো থাকে।"
+    },
+    {
+        id: 74,
+        question: "মানুষের বক্ষ অস্থিচক্রে মোট কয়টি অস্থি থাকে?",
+        source: "হাসান",
+        options: [
+            { key: "ক", text: "৩" },
+            { key: "খ", text: "৬" },
+            { key: "গ", text: "৪" },
+            { key: "ঘ", text: "৮" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "৪",
+        explanation: "মানুষের বক্ষ অস্থিচক্রে ২টি ক্ল্যাভিকল ও ২টি স্ক্যাপুলা মিলে মোট ৪টি অস্থি থাকে।"
+    },
+    {
+        id: 75,
+        question: "স্ক্যাপুলা কোন অংশের অস্থি?",
+        source: "হাসান",
+        options: [
+            { key: "ক", text: "বক্ষ অস্থিচক্রে" },
+            { key: "খ", text: "করোটি" },
+            { key: "গ", text: "শ্রোণিচক্র" },
+            { key: "ঘ", text: "বক্ষপিঞ্জর" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "বক্ষ অস্থিচক্রে",
+        explanation: "স্ক্যাপুলা বক্ষ অস্থিচক্রের একটি অংশ।"
+    },
+    {
+        id: 76,
+        question: "ফিমার এর অবস্থান কোথায়?",
+        source: "হাসান",
+        options: [
+            { key: "ক", text: "হাতে" },
+            { key: "খ", text: "পায়ে" },
+            { key: "গ", text: "বক্ষপিঞ্জরে" },
+            { key: "ঘ", text: "শ্রোণিচক্রে" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "পায়ে",
+        explanation: "ফিমার মানবদেহের উরুর বা পায়ের অস্থি।"
+    },
+    {
+        id: 77,
+        question: "হিউমেরাসের মস্তকে পাওয়া যায় কোন ধরনের তরুণাস্থি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "শ্বেত তন্তুময়" },
+            { key: "খ", text: "ক্যালসিফাইড" },
+            { key: "গ", text: "হায়ালিন" },
+            { key: "ঘ", text: "পীত-তন্তুময়" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "ক্যালসিফাইড",
+        explanation: "হিউমেরাস ও ফিমারের মস্তকে ক্যালসিফাইড বা চুনময় তরুণাস্থি পাওয়া যায়।"
+    },
+    {
+        id: 78,
+        question: "আন্তঃকশেরুকার চাকতিতে কী ধরনের তরুণাস্থি পাওয়া যায়?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "হায়ালিন" },
+            { key: "খ", text: "শ্বেত তন্তুময়" },
+            { key: "গ", text: "পীত তন্তুময়" },
+            { key: "ঘ", text: "ক্যালসিফাইড" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "হায়ালিন",
+        explanation: "কশেরুকা ও কশেরুকার মধ্যবর্তী সংযোগস্থলে শ্বেত তন্তুময় তরুণাস্থি থাকে।"
+    },
+    {
+        id: 79,
+        question: "হায়ালিন তরুণাস্থি পাওয়া যায়-",
+        source: "আজমল",
+        options: [
+            { key: "ক", text: "ফিমারের মস্তক" },
+            { key: "খ", text: "ইউস্টেশিয়ান নালি" },
+            { key: "গ", text: "পিনা" },
+            { key: "ঘ", text: "শ্বাসনালি" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "শ্বাসনালি",
+        explanation: "Hyaline বা স্বচ্ছ তরুণাস্থি Joint (অস্থিসন্ধি), নাসিকা ও শ্বাসনালিতে থাকে।"
+    },
+    {
+        id: 80,
+        question: "স্বচ্ছ তরুণাস্থি কোথায় পাওয়া যায়?",
+        source: "মাজেদা+আলীম",
+        options: [
+            { key: "ক", text: "স্বরযন্ত্র" },
+            { key: "খ", text: "আলজিহ্বা" },
+            { key: "গ", text: "বহিঃকর্ণ" },
+            { key: "ঘ", text: "ইউস্টেশিয়ান নালি" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "স্বরযন্ত্র",
+        explanation: "স্বরযন্ত্র, নাসিকা ও শ্বাসনালিতে স্বচ্ছ (হায়ালিন) তরুণাস্থি পাওয়া যায়।"
+    },
+    {
+        id: 81,
+        question: "কর্ণছত্র ও নাসিকার অগ্রভাগে কোন ধরনের তরুণাস্থি থাকে?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "হায়ালিন" },
+            { key: "খ", text: "পীত তন্তুময়" },
+            { key: "গ", text: "ক্যালসিফাইড" },
+            { key: "ঘ", text: "শ্বেত তন্তুময়" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "পীত তন্তুময়",
+        explanation: "কর্ণছত্র (পিনা) ও নাসিকার অগ্রভাগে পীত তন্তুময় বা স্থিতিস্থাপক তরুণাস্থি থাকে।"
+    },
+    {
+        id: 82,
+        question: "দুটি কশেরুকার মধ্যবর্তী স্থানে কোন তরুণাস্থি পাওয়া যায়?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "হায়ালিন" },
+            { key: "খ", text: "শ্বেত তন্তুময়" },
+            { key: "গ", text: "স্থিতিস্থাপক" },
+            { key: "ঘ", text: "ইউস্টেশিয়ান নালি" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "শ্বেত তন্তুময়",
+        explanation: "শ্বেত তরুণাস্থি মূলত কশেরুকা ও কশেরুকার সংযোগস্থলে থাকে।"
+    },
+    {
+        id: 83,
+        question: "চুনময় তরুণাস্থি পাওয়া যায় কোথায়?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "পিনা" },
+            { key: "খ", text: "শ্বাসনালি" },
+            { key: "গ", text: "হিউমেরাস ও ফিমারের মস্তক" },
+            { key: "ঘ", text: "ইউস্টেশিয়ান নালি" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "হিউমেরাস ও ফিমারের মস্তক",
+        explanation: "চুনময় তরুণাস্থি হিউমেরাস ও ফিমারের মস্তকে থাকে।"
+    },
+    {
+        id: 84,
+        question: "শ্বাসনালি ও নাকে কোন ধরনের তরুণাস্থি থাকে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "হায়ালিন" },
+            { key: "খ", text: "পীত তন্তুময়" },
+            { key: "গ", text: "শ্বেত-তন্ত্রময়" },
+            { key: "ঘ", text: "চুনময়" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "হায়ালিন",
+        explanation: "শ্বাসনালি ও নাকে হায়ালিন বা স্বচ্ছ তরুণাস্থি থাকে।"
+    },
+    {
+        id: 85,
+        question: "হায়ালিন তরুণাস্থি কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "কর্ণছত্র" },
+            { key: "খ", text: "আলজিহ্বা" },
+            { key: "গ", text: "শ্বাসনালি" },
+            { key: "ঘ", text: "ফিমারের মস্তক" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "শ্বাসনালি",
+        explanation: "শ্বাসনালির প্রাচীরে হায়ালিন তরুণাস্থি বিদ্যমান।"
+    },
+    {
+        id: 86,
+        question: "টেনডনের ক্ষেত্রে কোনটি সঠিক?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "দুটি হাড়কে যুক্ত করে" },
+            { key: "খ", text: "পেশিকে অস্থির সাথে যুক্ত করে" },
+            { key: "গ", text: "পেশি ও টেন্ডনের প্রকৃতি ভিন্ন" },
+            { key: "ঘ", text: "অঙ্গ সঞ্চালনের এর কোনো ভূমিকা নেই" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "পেশিকে অস্থির সাথে যুক্ত করে",
+        explanation: "পেশি ও অস্থিকে যুক্ত করে টেনডন।"
+    },
+    {
+        id: 87,
+        question: "নিচের কোনটির মাধ্যমে পেশি ও অস্থি যুক্ত হয়-",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "লিগামেন্ট" },
+            { key: "খ", text: "টেনডন" },
+            { key: "গ", text: "সাইনোভিয়াল" },
+            { key: "ঘ", text: "মায়োফাইব্রিল" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "টেনডন",
+        explanation: "পেশি ও অস্থিকে যুক্ত করে টেনডন।"
+    },
+    {
+        id: 88,
+        question: "শ্বাসনালিতে কোন ধরনের তরুণাস্থি থাকে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "স্বচ্ছ" },
+            { key: "খ", text: "স্থিতিস্থাপক" },
+            { key: "গ", text: "শ্বেততন্তুময়" },
+            { key: "ঘ", text: "চুনময়" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "স্বচ্ছ",
+        explanation: "শ্বাসনালিতে স্বচ্ছ (হায়ালিন) তরুণাস্থি থাকে।"
+    },
+    {
+        id: 89,
+        question: "কোন তরুণাস্থির ম্যাট্রিক্সে প্রচুর CaCO3 জমা থাকে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "স্বচ্ছ" },
+            { key: "খ", text: "পীত তন্ত্রময়" },
+            { key: "গ", text: "শ্বেত তন্তুময়" },
+            { key: "ঘ", text: "চুনময়" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "চুনময়",
+        explanation: "চুনময় তরুণাস্থির ম্যাট্রিক্সে প্রচুর ক্যালসিয়াম কার্বনেট জমা থাকে।"
+    },
+    {
+        id: 90,
+        question: "ক্যালসিফাইড তরুণাস্থি পাওয়া যায় কোন অঙ্গে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "হেড অফ হিউমেরাস" },
+            { key: "খ", text: "আলজিহ্বা" },
+            { key: "গ", text: "স্তন্যপায়ীর নাক" },
+            { key: "ঘ", text: "শ্বাসনালি" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "হেড অফ হিউমেরাস",
+        explanation: "হিউমেরাস ও ফিমারের মস্তকে ক্যালসিফাইড তরুণাস্থি পাওয়া যায়।"
+    },
+    {
+        id: 91,
+        question: "তরুণাস্থি (Cartilage) বিষয়ে কোনটি সঠিক?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "এর আবরণ পেরিকন্ড্রিয়াম" },
+            { key: "খ", text: "কলার গঠন অনমনীয়" },
+            { key: "গ", text: "হ্যাভারশিয়ান তন্ত্র থাকে" },
+            { key: "ঘ", text: "কোষের আকার মাকড়সার জালের মত" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "এর আবরণ পেরিকন্ড্রিয়াম",
+        explanation: "তরুণাস্থির আবরণকে পেরিকন্ড্রিয়াম বলে।"
+    },
+    {
+        id: 92,
+        question: "নিচের কোনটি তরুণাস্থিময় অস্থিসন্ধি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "কাঁধের" },
+            { key: "খ", text: "পিউবিক সিমফাইসিস" },
+            { key: "গ", text: "গম্ফোসিস" },
+            { key: "ঘ", text: "গোড়ালি" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "পিউবিক সিমফাইসিস",
+        explanation: "পিউবিক সিমফাইসিস হলো তরুণাস্থিময় অস্থিসন্ধি।"
+    },
+    {
+        id: 93,
+        question: "নিচের কোন অঙ্গে স্থিতিস্থাপক তরুণাস্থি পাওয়া যায় না?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "বহিঃকর্ণ" },
+            { key: "খ", text: "অন্তঃকর্ণ" },
+            { key: "গ", text: "ইউস্টেশিয়ান নালি" },
+            { key: "ঘ", text: "উপজিহ্বা" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "অন্তঃকর্ণ",
+        explanation: "বহিঃকর্ণ, ইউস্টেশিয়ান নালি ও উপজিহ্বায় স্থিতিস্থাপক তরুণাস্থি থাকে, কিন্তু অন্তঃকর্ণে থাকে না।"
+    },
+    {
+        id: 94,
+        question: "নিম্নের কোনটিতে তরুণাস্থি নাই?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "বহিঃকর্ণের পিনা" },
+            { key: "খ", text: "নাকের অন্তঃস্থিত বিভক্তি দেয়াল" },
+            { key: "গ", text: "স্বরযন্ত্র" },
+            { key: "ঘ", text: "মূত্রথলি" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "মূত্রথলি",
+        explanation: "মূত্রথলিতে কোনো তরুণাস্থি বিদ্যমান নেই।"
+    },
+    {
+        id: 95,
+        question: "ঐচ্ছিক পেশি নিচের কোনটির দ্বারা অস্থির সাথে সংযুক্ত থাকে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "পেরিঅস্টিয়াম" },
+            { key: "খ", text: "লিগামেন্ট" },
+            { key: "গ", text: "টেনডন" },
+            { key: "ঘ", text: "পেরিমাইসিয়াম" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "টেনডন",
+        explanation: "ঐচ্ছিক পেশি টেনডন দ্বারা অস্থির সাথে সংযুক্ত থাকে।"
+    },
+    {
+        id: 96,
+        question: "নিম্নের কোন তথ্যটি সঠিক?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "HCl নিষ্ক্রিয় আন্ত্রিক ট্রিপসিনোজেনকে সক্রিয় পেপসিনে পরিণত করে" },
+            { key: "খ", text: "মানুষের ক্ষেত্রে মেলাটোনিন সক্রিয় থাকে" },
+            { key: "গ", text: "দশম পশুকাকে ভাসমান পশুকা বলে" },
+            { key: "ঘ", text: "টেন্ডন পেশিকে অস্থির সাথে সংযুক্ত রাখে" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "টেন্ডন পেশিকে অস্থির সাথে সংযুক্ত রাখে",
+        explanation: "টেন্ডন পেশিকে অস্থির সাথে সংলগ্ন ও যুক্ত রাখে।"
+    },
+    {
+        id: 97,
+        question: "পীত তন্তুময় তরুণাস্থি কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "মেরুদণ্ডীদের শ্বাসনালি" },
+            { key: "খ", text: "কর্ণছত্র বা পিনা" },
+            { key: "গ", text: "মেরুদণ্ডীদের ভ্রূণীয় কঙ্কাল" },
+            { key: "ঘ", text: "পশুকার প্রান্তভাগ" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "কর্ণছত্র বা পিনা",
+        explanation: "কর্ণছত্র বা পিনায় পীত তন্তুময় তরুণাস্থি থাকে।"
+    },
+    {
+        id: 98,
+        question: "বক্ষপিঞ্জরের অস্থিগুলোর প্রান্তভাগে কোন ধরনের তরুণাস্থি থাকে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "হায়ালিন" },
+            { key: "খ", text: "শ্বেততন্ত্রময়" },
+            { key: "গ", text: "পীততন্ত্রময়" },
+            { key: "ঘ", text: "চুনময়" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "হায়ালিন",
+        explanation: "পশুকা বা বক্ষপিঞ্জরের অস্থির প্রান্তভাগে হায়ালিন তরুণাস্থি থাকে।"
+    },
+    {
+        id: 99,
+        question: "কোনটি হায়ালিন তরুণাস্থি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "বহিঃকর্ণ" },
+            { key: "খ", text: "শ্বাসনালি" },
+            { key: "গ", text: "এপিগ্লোটিস" },
+            { key: "ঘ", text: "ইউস্টেশিয়ান নালি" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "শ্বাসনালি",
+        explanation: "শ্বাসনালির প্রাচীরে হায়ালিন (স্বচ্ছ) তরুণাস্থি থাকে।"
+    },
+    {
+        id: 100,
+        question: "হ্যামস্ট্রিং পেশি কোথায় অবস্থান করে?",
+        source: "আজমল",
+        options: [
+            { key: "ক", text: "হাটুসন্ধির পিছনে" },
+            { key: "খ", text: "ফিমারের পিছনে" },
+            { key: "গ", text: "জানুসন্ধির পিছনে" },
+            { key: "ঘ", text: "উরুর পিছনে" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "জানুসন্ধির পিছনে",
+        explanation: "জানুসন্ধি বা হাঁটুসন্ধির পেছনে হ্যামস্ট্রিং পেশি অবস্থিত।"
+    },
+    {
+        id: 101,
+        question: "কোন পেশিতে ইন্টারক্যালেটেড ডিস্ক পাওয়া যায়?",
+        source: "মাজেদা+আলীম",
+        options: [
+            { key: "ক", text: "অনৈচ্ছিক" },
+            { key: "খ", text: "রৈখিক" },
+            { key: "গ", text: "কার্ডিয়াক" },
+            { key: "ঘ", text: "ঐচ্ছিক" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "কার্ডিয়াক",
+        explanation: "ইন্টারক্যালেটেড ডিস্ক কার্ডিয়াক পেশির প্রধান বৈশিষ্ট্য।"
+    },
+    {
+        id: 102,
+        question: "ঐচ্ছিক পেশিতন্তুর আবরণীকে কী বলে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "প্লাজমালেমা" },
+            { key: "খ", text: "মায়োসিন" },
+            { key: "গ", text: "সারকোলেমা" },
+            { key: "ঘ", text: "মায়োফাইব্রিল" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "সারকোলেমা",
+        explanation: "ঐচ্ছিক পেশিতন্তুর বাইরের আবরণকে সারকোলেমা বলা হয়।"
+    },
+    {
+        id: 103,
+        question: "মায়োফাইব্রিল কোন প্রোটিন দ্বারা তৈরি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "অ্যাকটিন ও জিলেটিন" },
+            { key: "খ", text: "মায়োসিন ও ইলাস্টিন" },
+            { key: "গ", text: "কোলাজেন ও মায়োসিন" },
+            { key: "ঘ", text: "মায়োসিন ও অ্যাকটিন" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "মায়োসিন ও অ্যাকটিন",
+        explanation: "মায়োফাইব্রিল মূলত মায়োসিন ও অ্যাকটিন প্রোটিন নিয়ে গঠিত।"
+    },
+    {
+        id: 104,
+        question: "হৃৎপেশির সংকোচনে কোন উপাদানটি কাজ করে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "পেরিমাইসিয়াম" },
+            { key: "খ", text: "মায়োফাইব্রিল" },
+            { key: "গ", text: "ইন্টারক্যালেটেড ডিস্ক" },
+            { key: "ঘ", text: "সারকোলেমা" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "ইন্টারক্যালেটেড ডিস্ক",
+        explanation: "ইন্টারক্যালেটেড ডিস্কের মাধ্যমে অতি দ্রুত সংকেত ছড়িয়ে হৃৎপেশির সংকোচন ঘটে।"
+    },
+    {
+        id: 105,
+        question: "পেশি কোষের আবরণীকে কী বলা হয়?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "সারকোলেমা" },
+            { key: "খ", text: "মায়োব্লাস্ট" },
+            { key: "গ", text: "মায়োফাইব্রিল" },
+            { key: "ঘ", text: "পেশিতন্তু" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "সারকোলেমা",
+        explanation: "পেশি কোষের আবরণকে সারকোলেমা বলে।"
+    },
+    {
+        id: 106,
+        question: "ঐচ্ছিক পেশি পাওয়া যায় কোথায়?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "মাথার খুলি ও এটলাস সন্ধি" },
+            { key: "খ", text: "হৃৎপিণ্ড" },
+            { key: "গ", text: "পাকস্থলীতে" },
+            { key: "ঘ", text: "জরায়ুতে" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "মাথার খুলি ও এটলাস সন্ধি",
+        explanation: "মাথার খুলি ও অ্যাটলাস সন্ধির পেশি হলো ঐচ্ছিক পেশি।"
+    },
+    {
+        id: 107,
+        question: "হ্যামস্ট্রিং পেশি কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "রেক্টাস ফিমোরিস" },
+            { key: "খ", text: "বাইসেপস ফিমোরিস" },
+            { key: "গ", text: "ভাস্টাস মিডিয়ালিস" },
+            { key: "ঘ", text: "ভাস্টাস ল্যাটারালিস" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "বাইসেপস ফিমোরিস",
+        explanation: "Biceps Femoris Muscle হলো হ্যামস্ট্রিং পেশির অংশ।"
+    },
+    {
+        id: 108,
+        question: "নিচের কোন পেশি হাঁটুর জয়েন্ট সোজা করতে প্রধান ভূমিকা পালন করে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "সোলিয়াস" },
+            { key: "খ", text: "গ্যাস্ট্রোকনেমিয়াস" },
+            { key: "গ", text: "কোয়াড্রিসেপস" },
+            { key: "ঘ", text: "গ্লুটিয়াস" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "কোয়াড্রিসেপস",
+        explanation: "কোয়াড্রিসেপস পেশি হাঁটুর জয়েন্ট সোজা করার কাজ করে।"
+    },
+    {
+        id: 109,
+        question: "হৃৎপেশির বৈশিষ্ট্য কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "পেশিতন্ত শাখা-প্রশাখাবিহীন" },
+            { key: "খ", text: "সহজেই অবসাদগ্রস্থ হয়" },
+            { key: "গ", text: "সারকোলেমা অস্পষ্ট ও অসম্পূর্ণ" },
+            { key: "ঘ", text: "সংকোচনের ক্ষমতা মন্থর" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "সারকোলেমা অস্পষ্ট ও অসম্পূর্ণ",
+        explanation: "হৃৎপেশিতে সারকোলেমা অস্পষ্ট থাকে।"
+    },
+    {
+        id: 110,
+        question: "ইন্টারক্যালেটেড ডিস্ক কোন ধরনের পেশির বৈশিষ্ট্য?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "ঐচ্ছিক পেশি" },
+            { key: "খ", text: "হৃৎপেশি" },
+            { key: "গ", text: "মসৃণ পেশি" },
+            { key: "ঘ", text: "রৈখিক পেশি" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "হৃৎপেশি",
+        explanation: "ইন্টারক্যালেটেড ডিস্ক হৃৎপেশির অনন্য গঠনগত বৈশিষ্ট্য।"
+    },
+    {
+        id: 111,
+        question: "ইন্টারক্যালেটেড ডিস্ক সংশ্লিষ্ট পেশির ক্ষেত্রে প্রযোজ্য কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "সহজেই অবসাদগ্রস্ত হয়" },
+            { key: "খ", text: "সংকোচন-প্রসারণ স্বতঃস্ফূর্ত" },
+            { key: "গ", text: "শাখাবিহীন" },
+            { key: "ঘ", text: "নিউক্লিয়াস অসংখ্য" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "সংকোচন-প্রসারণ স্বতঃস্ফূর্ত",
+        explanation: "কার্ডিয়াক পেশির সংকোচন-প্রসারণ স্বতঃস্ফূর্ত প্রকৃতির।"
+    },
+    {
+        id: 112,
+        question: "চলনের সময় হাটুতে ভাজ করে কোন মাংসপেশি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "বাইসেপস ফিমোরিস" },
+            { key: "খ", text: "ট্রাইসেপস" },
+            { key: "গ", text: "ডেল্টয়েড" },
+            { key: "ঘ", text: "রেকটাস ফিমোরিস" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "বাইসেপস ফিমোরিস",
+        explanation: "বাইসেপস ফিমোরিস পেশি হাঁটুকে ভাঁজ করতে সাহায্য করে।"
+    },
+    {
+        id: 113,
+        question: "গোড়ালির পেশি নিম্নের কোনটি?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "ডিজিটোরাম লঙ্গাস" },
+            { key: "খ", text: "গ্যাস্ট্রোকনেমিয়াস" },
+            { key: "গ", text: "এক্সটেনসর ডিজিটোরাম" },
+            { key: "ঘ", text: "কোয়াড্রিসেপস ফিমোরিস" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "গ্যাস্ট্রোকনেমিয়াস",
+        explanation: "গ্যাস্ট্রোকনেমিয়াস হলো গোড়ালির অন্যতম প্রধান পেশি।"
+    },
+    {
+        id: 114,
+        question: "মানব কঙ্কালতন্ত্রে তৃতীয় শ্রেণির লিভার কোন অঙ্গে কার্যকরি?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "হাতের কনুই সঞ্চালনে" },
+            { key: "খ", text: "মানুষের মাথা সঞ্চালনে" },
+            { key: "গ", text: "পায়ের গোড়ালি সঞ্চালনে" },
+            { key: "ঘ", text: "মানুষের কোমর সঞ্চালনে" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "হাতের কনুই সঞ্চালনে",
+        explanation: "হাতের কনুই ভাজ ও সঞ্চালন হলো ৩য় শ্রেণির লিভারের প্রয়োগ।"
+    },
+    {
+        id: 115,
+        question: "১ম শ্রেণির লিভারের ক্ষেত্রে কোনটি সঠিক-",
+        source: "মাজেদা+আলীম",
+        options: [
+            { key: "ক", text: "বল-ভার-ফ্যালক্রাম" },
+            { key: "খ", text: "ফ্যালক্রাম-বল-ভার" },
+            { key: "গ", text: "ভার-ফ্যালক্রাম-বল" },
+            { key: "ঘ", text: "ভার-বল-ফ্যালক্রাম" }
+        ],
+        correctKey: "গ",
+        correctAnswerText: "ভার-ফ্যালক্রাম-বল",
+        explanation: "১ম শ্রেণির লিভারে ফ্যালক্রামটি ভার ও বলের মাঝখানে অবস্থিত থাকে।"
+    },
+    {
+        id: 116,
+        question: "কোনটি দ্বিতীয় শ্রেণির লিভার?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "মাথার খুলি ও এটলাস সন্ধি" },
+            { key: "খ", text: "পায়ের গোড়ালি" },
+            { key: "গ", text: "কনুই সন্ধি" },
+            { key: "ঘ", text: "হাঁটু সন্ধি" }
+        ],
+        correctKey: "খ",
+        correctAnswerText: "পায়ের গোড়ালি",
+        explanation: "পায়ের গোড়ালি উঁচু করা ২য় শ্রেণির লিভারের উদাহরণ।"
+    },
+    {
+        id: 117,
+        question: "কোনটি প্রথম শ্রেণির লিভারের মতো কাজ করে?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "কনুই সন্ধির সঞ্চালন" },
+            { key: "খ", text: "হাতের আঙ্গুল সঞ্চালন" },
+            { key: "গ", text: "পায়ের আঙ্গুল সঞ্চালন" },
+            { key: "ঘ", text: "করোটি ও অ্যাটলাস সঞ্চালন" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "করোটি ও অ্যাটলাস সঞ্চালন",
+        explanation: "করোটি ও অ্যাটলাস সন্ধির সঞ্চালন ১ম শ্রেণির লিভার হিসেবে ক্রিয়া করে।"
+    },
+    {
+        id: 118,
+        question: "২য় শ্রেণির লিভারের ক্ষেত্রে কোনটি সঠিক?",
+        source: "মাজেদা",
+        options: [
+            { key: "ক", text: "বল-ভার-ফ্যালক্রম" },
+            { key: "খ", text: "ফ্যালক্রম-বল-ভার" },
+            { key: "গ", text: "ভার-ফ্যালক্রম-বল" },
+            { key: "ঘ", text: "ভার-বল-ফ্যালক্রম" }
+        ],
+        correctKey: "ক",
+        correctAnswerText: "বল-ভার-ফ্যালক্রম",
+        explanation: "২য় শ্রেণির লিভারে বল ও ফ্যালক্রামের মাঝখানে ভার অবস্থান করে।"
+    },
+    {
+        id: 119,
+        question: "সাধারণ হাড়ভাঙ্গার অপর নাম কী?",
+        source: "আলীম",
+        options: [
+            { key: "ক", text: "যৌগিক হাড়ভাঙ্গা" },
+            { key: "খ", text: "উন্মুক্ত হাড়ভাঙ্গা" },
+            { key: "গ", text: "জটিল হাড়ভাঙ্গা" },
+            { key: "ঘ", text: "বদ্ধ হাড়ভাঙ্গা" }
+        ],
+        correctKey: "ঘ",
+        correctAnswerText: "বদ্ধ হাড়ভাঙ্গা",
+        explanation: "সাধারণ হাড়ভাঙ্গাকে বদ্ধ হাড়ভাঙ্গা বলা হয়।"
+    }
+];
+
+        let score = 0;
+        let answeredCount = 0;
+        let isSoundMuted = false;
+        let answeredQuestions = new Set();
+
+        // Web Audio Synthesizer
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+        function playSound(type) {
+            if (isSoundMuted) return;
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            const now = audioCtx.currentTime;
+
+            if (type === 'click') {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(400, now);
+                osc.frequency.exponentialRampToValueAtTime(800, now + 0.05);
+                gain.gain.setValueAtTime(0.15, now);
+                gain.gain.linearRampToValueAtTime(0.01, now + 0.05);
+                osc.start(now);
+                osc.stop(now + 0.05);
+            } else if (type === 'correct') {
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(523.25, now); // C5
+                osc.frequency.setValueAtTime(659.25, now + 0.08); // E5
+                osc.frequency.setValueAtTime(783.99, now + 0.16); // G5
+                gain.gain.setValueAtTime(0.2, now);
+                gain.gain.linearRampToValueAtTime(0.01, now + 0.3);
+                osc.start(now);
+                osc.stop(now + 0.3);
+            } else if (type === 'wrong') {
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(220, now);
+                osc.frequency.linearRampToValueAtTime(110, now + 0.2);
+                gain.gain.setValueAtTime(0.2, now);
+                gain.gain.linearRampToValueAtTime(0.01, now + 0.2);
+                osc.start(now);
+                osc.stop(now + 0.2);
+            } else if (type === 'reveal') {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(350, now);
+                osc.frequency.exponentialRampToValueAtTime(700, now + 0.12);
+                gain.gain.setValueAtTime(0.12, now);
+                gain.gain.linearRampToValueAtTime(0.01, now + 0.12);
+                osc.start(now);
+                osc.stop(now + 0.12);
+            }
+        }
+
+        function renderQuiz() {
+            const container = document.getElementById('quizContainer');
+            container.innerHTML = '';
+            document.getElementById('totalQuestionsCount').innerText = quizData.length;
+            document.getElementById('scoreCounter').innerText = score;
+
+            quizData.forEach((q, index) => {
+                const qNum = (index + 1).toLocaleString('bn-BD', { minimumIntegerDigits: 2 });
+                
+                const card = document.createElement('div');
+                card.className = `glass-card rounded-3xl p-6 md:p-7 shadow-lg transition-all duration-300 hover:shadow-2xl border border-royal-200/60 dark:border-royal-900/40 relative group`;
+                card.id = `card-${q.id}`;
+
+                card.innerHTML = `
+                    <!-- Question Header & Source Tag -->
+                    <div class="flex items-start justify-between gap-4 mb-6">
+                        <div class="space-y-2 flex-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-xl bg-royal-600/10 dark:bg-royal-500/20 text-royal-700 dark:text-royal-300 font-bold text-sm shrink-0 border border-royal-500/20">
+                                    ${qNum}
+                                </span>
+                                <!-- Source Citation Badge (Right inside question box beforehand) -->
+                                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-royal-100 dark:bg-royal-900/60 text-royal-700 dark:text-royal-300 font-semibold text-xs border border-royal-300/50 dark:border-royal-700/50">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C20.832 18.477 19.247 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    [${q.source}]
+                                </span>
+                            </div>
+                            <h3 class="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100 leading-relaxed pt-1">
+                                ${q.question}
+                            </h3>
+                        </div>
+
+                        <!-- Circular Question Mark Button -->
+                        <button onclick="toggleAnswer(${q.id}, true)" 
+                                title="উত্তর ও ব্যাখ্যা দেখুন"
+                                class="w-12 h-12 rounded-full bg-gradient-to-tr from-royal-600 to-indigo-600 hover:from-royal-700 hover:to-indigo-700 text-white font-bold flex items-center justify-center shadow-lg glow-btn-royal shrink-0 transition-transform active:scale-95 group-hover:rotate-12"
+                                id="revealBtn-${q.id}">
+                            <span class="text-xl">?</span>
+                        </button>
+                    </div>
+
+                    <!-- Options Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4" id="optionsGroup-${q.id}">
+                        ${q.options.map(opt => `
+                            <button onclick="selectOption(${q.id}, '${opt.key}')" 
+                                    id="btn-${q.id}-${opt.key}"
+                                    class="option-btn text-left p-4 rounded-2xl border border-slate-200 dark:border-slate-800/80 hover:border-royal-500/50 bg-slate-50/60 dark:bg-slate-900/50 hover:bg-royal-50 dark:hover:bg-royal-950/40 transition-all flex items-center justify-between font-medium text-slate-700 dark:text-slate-200 group/btn">
+                                <span class="flex items-center gap-3">
+                                    <span class="w-7 h-7 rounded-lg bg-slate-200 dark:bg-slate-800 group-hover/btn:bg-royal-600 group-hover/btn:text-white flex items-center justify-center text-xs font-bold transition-colors">
+                                        ${opt.key}
+                                    </span>
+                                    <span>${opt.text}</span>
+                                </span>
+                                <span class="status-icon"></span>
+                            </button>
+                        `).join('')}
+                    </div>
+
+                    <!-- Answer & Explanation Reveal Container -->
+                    <div id="answerBox-${q.id}" class="hidden mt-4 pt-4 border-t border-slate-200 dark:border-slate-800/80 animate-pop">
+                        <!-- Congratulatory Header Banner (Appears on Correct Selection) -->
+                        <div id="congratMessage-${q.id}" class="hidden mb-3 p-3 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-800 dark:text-emerald-300 font-bold text-sm flex items-center gap-2 animate-celebrate">
+                            <span class="text-lg">🎉</span>
+                            <span>অভিনন্দন! আপনার উত্তর সঠিক হয়েছে!</span>
+                        </div>
+
+                        <!-- Answer & Explanation Card -->
+                        <div class="bg-gradient-to-r from-royal-500/10 via-indigo-500/10 to-teal-500/10 border border-royal-500/30 rounded-2xl p-4 text-slate-800 dark:text-slate-200">
+                            <div class="flex items-center gap-2 font-bold mb-1.5 text-royal-700 dark:text-royal-300 text-base">
+                                <svg class="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span>সঠিক উত্তর: ${q.correctKey}. ${q.correctAnswerText}</span>
+                            </div>
+                            <p class="text-sm mt-1 text-slate-600 dark:text-slate-300 leading-relaxed pl-7">
+                                <span class="font-bold text-slate-800 dark:text-slate-100">ব্যাখ্যা:</span> ${q.explanation}
+                            </p>
+                        </div>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        function selectOption(qId, selectedKey) {
+            const question = quizData.find(q => q.id === qId);
+            if (!question) return;
+
+            const isAlreadyAnswered = answeredQuestions.has(qId);
+            
+            // Disable option buttons for this question
+            const optionsGroup = document.getElementById(`optionsGroup-${qId}`);
+            const buttons = optionsGroup.querySelectorAll('.option-btn');
+            
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                btn.classList.add('cursor-not-allowed', 'opacity-80');
+            });
+
+            const selectedBtn = document.getElementById(`btn-${qId}-${selectedKey}`);
+            const correctBtn = document.getElementById(`btn-${qId}-${question.correctKey}`);
+            const congratBanner = document.getElementById(`congratMessage-${qId}`);
+
+            if (selectedKey === question.correctKey) {
+                // Correct Answer Logic
+                selectedBtn.classList.remove('bg-slate-50/60', 'dark:bg-slate-900/50', 'border-slate-200', 'dark:border-slate-800/80');
+                selectedBtn.classList.add('bg-emerald-500/20', 'border-emerald-500', 'text-emerald-700', 'dark:text-emerald-300', 'font-bold');
+                selectedBtn.querySelector('.status-icon').innerHTML = `
+                    <svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                `;
+                
+                // Show congratulatory banner
+                if (congratBanner) congratBanner.classList.remove('hidden');
+
+                if (!isAlreadyAnswered) {
+                    score++;
+                    playSound('correct');
+                    
+                    // Trigger minor festive burst ONLY on correct answer
+                    if (typeof confetti === 'function') {
+                        confetti({
+                            particleCount: 40,
+                            spread: 50,
+                            origin: { y: 0.7 }
+                        });
+                    }
+                }
+            } else {
+                // Wrong Answer Logic (NO celebration/confetti)
+                selectedBtn.classList.remove('bg-slate-50/60', 'dark:bg-slate-900/50');
+                selectedBtn.classList.add('bg-rose-500/20', 'border-rose-500', 'text-rose-700', 'dark:text-rose-300', 'animate-shake');
+                selectedBtn.querySelector('.status-icon').innerHTML = `
+                    <svg class="w-6 h-6 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+                `;
+
+                // Highlight Correct Option quietly
+                correctBtn.classList.add('bg-emerald-500/10', 'border-emerald-500/50');
+                
+                if (!isAlreadyAnswered) {
+                    playSound('wrong');
+                }
+            }
+
+            if (!isAlreadyAnswered) {
+                answeredQuestions.add(qId);
+                answeredCount++;
+                updateProgress();
+            }
+
+            // ALWAYS reveal explanation regardless of right or wrong selection
+            revealAnswerBox(qId);
+        }
+
+        function revealAnswerBox(qId) {
+            const answerBox = document.getElementById(`answerBox-${qId}`);
+            const revealBtn = document.getElementById(`revealBtn-${qId}`);
+
+            if (answerBox.classList.contains('hidden')) {
+                answerBox.classList.remove('hidden');
+                revealBtn.classList.add('rotate-45', 'from-emerald-500', 'to-teal-600');
+                revealBtn.title = "উত্তর লুকান";
+            }
+        }
+
+        function toggleAnswer(qId, triggerSound = true) {
+            const answerBox = document.getElementById(`answerBox-${qId}`);
+            const revealBtn = document.getElementById(`revealBtn-${qId}`);
+
+            if (answerBox.classList.contains('hidden')) {
+                answerBox.classList.remove('hidden');
+                revealBtn.classList.add('rotate-45', 'from-emerald-500', 'to-teal-600');
+                revealBtn.title = "উত্তর লুকান";
+                if (triggerSound) playSound('reveal');
+            } else if (triggerSound) {
+                answerBox.classList.add('hidden');
+                revealBtn.classList.remove('rotate-45', 'from-emerald-500', 'to-teal-600');
+                revealBtn.title = "উত্তর ও ব্যাখ্যা দেখুন";
+                playSound('click');
+            }
+        }
+
+        function updateProgress() {
+            document.getElementById('scoreCounter').innerText = score;
+            const progressPercent = (answeredCount / quizData.length) * 100;
+            document.getElementById('progressBar').style.width = `${progressPercent}%`;
+
+            if (answeredCount === quizData.length) {
+                setTimeout(() => {
+                    document.getElementById('finalScore').innerText = `${score} / ${quizData.length}`;
+                    document.getElementById('completionCard').classList.remove('hidden');
+                }, 500);
+            }
+        }
+
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            playSound('click');
+        }
+
+        function toggleSound() {
+            isSoundMuted = !isSoundMuted;
+            document.getElementById('soundIconOn').classList.toggle('hidden', isSoundMuted);
+            document.getElementById('soundIconOff').classList.toggle('hidden', !isSoundMuted);
+        }
+
+        function resetQuiz() {
+            score = 0;
+            answeredCount = 0;
+            answeredQuestions.clear();
+            document.getElementById('completionCard').classList.add('hidden');
+            document.getElementById('progressBar').style.width = '0%';
+            renderQuiz();
+            playSound('click');
+        }
+
+        window.onload = function() {
+            renderQuiz();
+        };
+    </script>
+</body>
+</html>
